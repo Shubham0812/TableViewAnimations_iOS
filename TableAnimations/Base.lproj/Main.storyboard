@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5aN-Xt-rrX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="690"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dY1-Er-vhd">
+                                <rect key="frame" x="24" y="758" width="366" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAi-JN-Yqs" userLabel="button1">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="yfX-6D-AXB"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="1.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26" scale="large" weight="semibold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JU1-mE-1LI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-W8-zLU" userLabel="button2">
+                                        <rect key="frame" x="91.5" y="0.0" width="91.5" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="aeL-dW-zIB"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="2.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26" scale="large" weight="semibold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiV-B1-v0U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVs-lw-KWY" userLabel="button3">
+                                        <rect key="frame" x="183" y="0.0" width="91.5" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="rgQ-xS-S1G"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="3.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26" scale="large" weight="semibold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Is2-ml-zNX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQx-Ob-SOt" userLabel="button4">
+                                        <rect key="frame" x="274.5" y="0.0" width="91.5" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="ccu-af-KmM"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="4.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26" scale="large" weight="semibold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j18-Xb-z0b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5aN-Xt-rrX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6tI-Mf-nNF"/>
+                            <constraint firstItem="dY1-Er-vhd" firstAttribute="top" secondItem="5aN-Xt-rrX" secondAttribute="bottom" constant="24" id="JWE-a6-dAi"/>
+                            <constraint firstItem="5aN-Xt-rrX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N6G-ZS-PKj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5aN-Xt-rrX" secondAttribute="trailing" id="QwO-jl-BSH"/>
+                            <constraint firstItem="5aN-Xt-rrX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.77" id="dQy-o7-mGt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dY1-Er-vhd" secondAttribute="trailing" constant="24" id="dYA-63-roZ"/>
+                            <constraint firstItem="dY1-Er-vhd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="x0o-2U-GJg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="SAi-JN-Yqs" id="Mba-xu-FVn"/>
+                        <outlet property="button2" destination="Lhf-W8-zLU" id="MUE-hf-MUM"/>
+                        <outlet property="button3" destination="fVs-lw-KWY" id="RTQ-cP-dxh"/>
+                        <outlet property="button4" destination="qQx-Ob-SOt" id="aN3-gB-BaD"/>
+                        <outlet property="tableView" destination="5aN-Xt-rrX" id="0Eo-Uv-xoq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.circle" catalog="system" width="128" height="121"/>
+        <image name="2.circle" catalog="system" width="128" height="121"/>
+        <image name="3.circle" catalog="system" width="128" height="121"/>
+        <image name="4.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
